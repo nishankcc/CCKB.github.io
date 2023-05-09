@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Nishank</title>
+    <title> KB Testing</title>
   </head>
   <body>
-    Hello I am Nishank
-  </body>
+Step 1: Create Masking Configuration
+To add objects and fields for the masking process the user needs to create at least one Configuration.
+ 
+
+Step 1: Navigate to the “Configuration” tab and click on the “New” button
+
+20.png
+
+ 
+
+Step 2: Enter configuration name (Configuration name can be anything that user wants) 
+
+User can enter a Description regarding the configuration to understand easily and it is optional.
+
+The user will see the ‘Retry Count' field in which the initial value is Null. Retry Count is used to repeat the execution if there will be any error occurred in the execution while processing. Retry Count is a numeric field in which the user can provide a number. The number that the user enters in the Retry Count field that many times the execution will be repeated automatically. And if all the records get processed successfully and status gets Completed in the very first execution i.e Parent execution, it will not repeat the execution even if the user has added the value in the Retry Count field. 
+In case Retry Count field is not empty and execution gets repeated then user can see Repeated Execution records in the ‘Retry Executions’ section.
+   
+
+Step 3: Select the “Delete Settings” [If a user selects any activity in Delete Settings, the records of that activity will be deleted after the data masking execution completes.]
+
+After setting up all Delete Settings, click on the “Save” button.
+ 
+
+Crreate Configuration1.png
+
+
+ 
+
+Advanced Configuration
+
+Advanced Configuration Section contains two functionalities.
+
+Notify Users
+
+Activate Users
+
+ 
+
+1. Notify Users:- 
+
+It is used to get notifications after the successful execution of a masking batch. For that user need to add the username of any user who should be notified.
+
+Users can add multiple usernames if needed separating by comma-separated value
+
+ 
+
+creating configuration2.png
+
+ 
+
+After batch execution is completed, the user will see the notification here at the bell icon.
+
+4.png
+
+5.png
+
+2. Activate User:- 
+
+When you create, refresh, or clone a sandbox, user email addresses are modified in your sandbox so that production users don’t receive automatically generated email messages from the sandbox. User email addresses are appended with .invalid.
+
+If the user wants to activate the user. You need to pass the user's email id here. So that .invalid is removed
+27.png
+
+Validated  </body>
 </html>
